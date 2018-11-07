@@ -1,0 +1,72 @@
+family = {  uncles: ["bob", "joe", "steve"],
+            sisters: ["jane", "jill", "beth"],
+            brothers: ["frank","rob","david"],
+            aunts: ["mary","sally","susan"]
+          }
+
+
+immediate_family = family.select do |k,v|
+      k == :sister || k == :brothers
+    end
+
+    new_array = immediate_family.values.flatten
+    p new_array
+
+
+me = {Tyler: "Ansell"}
+hobby = {learning: "Ruby"}
+
+puts me.merge(hobby)
+puts me
+puts hobby
+puts me.merge!(hobby)
+puts me 
+puts hobby
+
+hash = {football: "Redskins",
+        basketball: "Wizards",
+        baseball: "Orioles" }
+
+hash.each do |key,value|
+    puts "This is the #{key}"
+end
+
+hash.each do |key,value|
+    puts "This is the #{value}"
+end
+hash.each do |key,value|
+    puts "This is the #{key} and the #{value}"
+end
+
+person[:name]
+
+
+has_value
+if hash.has_value?("Redskins")
+  puts "This hash has the Redskins in it"
+else
+  puts "This has does not have the Redskins in it"
+end
+
+result = {}
+
+words.each do |word|
+  key = word.split('').sort.join
+  if result.has_key?(key)
+    result[key].push(word)
+  else
+    result[key] = [word]
+  end
+end
+
+result.each_value do |v|
+  puts "------"
+  p v
+end
+
+
+In my_hash x is a symbol and in my_hash2 x is not a symbol
+
+B; a key is not an aspect of an array, a key is an aspect of a hash
+
+

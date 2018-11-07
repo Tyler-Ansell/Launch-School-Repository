@@ -1,0 +1,54 @@
+1. false
+2. false
+3. false
+4. true
+5. true
+
+
+def upcase(string)
+  if string.length > 10
+    string.upcase
+  else
+    string
+  end
+end
+
+puts "Give me a number between 0 and 100:"
+  number=gets.chomp.to_i
+
+  if number < 0
+    puts "Your number is negative, please enter a number between 0 and 100!"
+  elsif number <= 50
+    puts "Your number is between 0 and 50"
+  elsif number <= 100
+    puts "Your number is between 50 and 100"
+  elsif number > 100
+    puts "Your number is greater than 100"
+  end
+  
+
+  1. False
+  2. "Did you get it right?"
+  3. "Alright now!"
+
+
+
+  
+
+  def number_guessing(number)
+    case 
+    when number < 0
+      puts "Your number is negative, please enter a number between 0 and 100!"
+    when number <= 50
+      puts "Your number is between 0 and 50"
+    when number <= 100
+      puts "Your number is between 50 and 100"
+    else number > 100
+      puts "Your number is greater than 100"
+    end
+  end
+
+  You need to add another end to close the method. You've only closed the if/else statement with the single end used.
+
+  
+
