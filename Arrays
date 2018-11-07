@@ -1,0 +1,35 @@
+arr = [1, 3, 5, 7, 9, 11]
+number = 3
+if arr.include?(3) 
+  puts "3 is in the array"
+end
+
+1. returns 1
+    arr =  [["b"], ["b", 2], ["b", 3], ["a", 1], ["a", 2], ["a", 3]]
+2. returns [1, 2, 3]
+    arr = [["b"], ["a", [1, 2, 3]]]
+
+arr.last.first
+
+1. 3
+2. Invalid syntax
+3. 8
+
+1. e
+2. A
+3. nil
+
+names[3] = 'jody'
+Arrays are indexed with integers not strings like 'margaret'
+
+
+array=[1,2,3,4,5]
+array2=[]
+  array.each do|n|
+  array2 << n + 2
+end
+p array
+p array2
+
+
+

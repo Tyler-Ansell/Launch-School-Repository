@@ -1,0 +1,30 @@
+"Nathan" + "Ansell"
+
+thousands = 5876 / 1000
+hundreds = 5876 % 1000 / 100
+tens = 5876 % 1000 % 100 / 10
+ones = 5876 % 1000 % 100 % 10
+
+favorite_movies = { Shutter Island: 2010, 
+                    Godfather: 1972 } 
+puts favorite_movies[:Shutter Island]
+puts favorite_movies[:Godfather]
+
+
+dates= [2010, 1972]
+puts dates[0]
+puts dates[1]
+
+puts 5 * 4 * 3 * 2 * 1
+puts 6 * 5 * 4 * 3 * 2 * 1
+puts 7 * 6 * 5 * 4 * 3 * 2 * 1
+puts 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1
+
+
+puts 7.6 * 7.6
+puts 5.6 * 5.6
+puts 8.8 * 8.8
+
+There's an unclosed hash somewhere in the program.
+
+
