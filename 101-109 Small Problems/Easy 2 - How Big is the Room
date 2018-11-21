@@ -1,0 +1,11 @@
+puts "Enter the length of the room in meters: "
+length_of_room=gets.chomp.to_f
+
+puts "Enter the width of the room in meters: "
+width_of_room=gets.chomp.to_f
+
+area_of_room_meters = (length_of_room * width_of_room)
+area_of_room_square_feet = (length_of_room * width_of_room) * 10.7639 
+
+
+puts "the area of the room is #{area_of_room_meters} square meters and #{area_of_room_square_feet} square feet. "

@@ -1,0 +1,4 @@
+random_age_between_20_and_200 = rand(20..200)
+puts "Teddy is #{random_age_between_20_and_200} years old! "
+
+
