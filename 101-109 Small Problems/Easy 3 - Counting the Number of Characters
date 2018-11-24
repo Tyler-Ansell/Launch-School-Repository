@@ -1,0 +1,6 @@
+puts "Please write word or multiple words: "
+input = gets.chomp
+
+gets_number_of_characters = input.delete(' ').length
+
+puts "There are #{gets_number_of_characters} characters in \"#{input}\"."
