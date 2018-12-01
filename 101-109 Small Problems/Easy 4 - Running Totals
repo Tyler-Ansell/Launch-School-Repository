@@ -1,0 +1,34 @@
+Write a method that takes an Array of numbers, and returns an Array with the same number of elements, 
+and each element has the running total from the original Array.
+
+Examples:
+
+running_total([2, 5, 13]) == [2, 7, 20]
+running_total([14, 11, 7, 15, 20]) == [14, 25, 32, 47, 67]
+running_total([3]) == [3]
+running_total([]) == []
+
+def running_total(array)
+  sum = 0
+  array.map { |value| sum += value }
+end
+
+
+input array
+
+output array of the running total of the input array
+
+rules
+output array has the same number of elements as the original array
+
+data structure
+array
+
+method
+going to need to iterate through the first array
+while iterating will need to add the value to the right (an index position higher than the one to its left)
+  to the value to the left in the array
+  that will need to be returned as a value in the new array and the process will have to be repeated
+  until the array has been entirely iterated through
+
+
