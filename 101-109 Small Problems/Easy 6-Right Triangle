@@ -1,0 +1,41 @@
+Right Triangles
+
+Write a method that takes a positive integer, n, as an argument, and displays a right triangle whose sides 
+each have n stars. The hypotenuse of the triangle (the diagonal side in the images below) 
+should have one end at the lower-left of the triangle, and the other end at the upper-right.
+
+Examples:
+
+triangle(5)
+
+    *
+   **
+  ***
+ ****
+*****
+triangle(9)
+
+        *
+       **
+      ***
+     ****
+    *****
+   ******
+  *******
+ ********
+*********
+
+def triangle(n)
+number_of_spaces = n - 1
+number_of_asterisks = 1 
+loop do 
+  break if number_of_asterisks >= n
+  puts "#{' ' * number_of_spaces} #{'*' * number_of_asterisks}"
+number_of_spaces -= 1
+number_of_asterisks += 1
+end
+end  
+
+input - number
+output - triangle of * that starts with 1 and (n-1) spaces and then adds a * each time and subtracts one from
+number_of_spaces
